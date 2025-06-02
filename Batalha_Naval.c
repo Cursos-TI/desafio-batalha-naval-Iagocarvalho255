@@ -9,7 +9,7 @@ int main(){
     
     int linha1 = 1;
     int coluna1 = 1;
-    for (int k = 0; k < 4; k++) {
+    for (int k = 0; k < 3; k++) {
         tabuleiro[linha1][coluna1 + k] = 3;
     }
 
@@ -20,8 +20,18 @@ int main(){
         tabuleiro[linha2 + k][coluna2] = 3;
     }
 
+    int linha3 = 0;
+    int coluna3 = 4;
+    for (int k = 0; k < 3; k++) {
+        tabuleiro[linha3 + k][coluna3 + k] = 3;
+    }
 
-
+    
+    int linha4 = 1;
+    int coluna4 = 7;
+    for (int k = 0; k < 3; k++) {
+        tabuleiro[linha4 + k][coluna4 + k] = 3;
+    }
     for(int i = 0; i <= 10; i++){
         for(int j = 0; j <= 10; j++){
             if(i == 0 && j == 0){
